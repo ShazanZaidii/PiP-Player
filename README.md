@@ -1,16 +1,16 @@
-PiP Player: Always-On-Top Web Browser v1.0.0
+🖼️ PiP Player: Always-On-Top Web Browser v1.0.0
 
 A lightweight, persistent Picture-in-Picture (PiP) utility built with Python and PyQt6. This app is designed to float above all other applications, making it perfect for watching videos, streaming, or monitoring web content while you work.
 
 ✨ Key Features
 
-Always On Top: The window maintains a high Z-order, staying visible above all other applications (full-screen apps, IDEs, documents).
+True PiP (Always On Top): The window maintains a high Z-order, staying visible above all other applications (full-screen apps, IDEs, documents).
+
+Persistent Session: Securely saves login credentials, cookies, and history to a dedicated local folder (~/.PiP_Session_Data), ensuring you stay signed in between sessions.
 
 Native Window Controls: Includes standard Minimize and Close buttons for smooth integration with macOS and Windows.
 
-Persistent Session: Saves login credentials, cookies, and history to a dedicated local folder (~/.PiP_Session_Data), ensuring you stay signed in between sessions.
-
-Minimal Interface: The URL input bar automatically hides after navigation. Right-click anywhere on the video content to reveal the URL bar.
+Minimal Interface: The URL input bar automatically hides after navigation. Right-click anywhere on the video content to reveal the URL bar again.
 
 Fast Startup: Uses the optimized PyInstaller --onedir mode for quick launch times.
 
@@ -18,24 +18,36 @@ Fast Startup: Uses the optimized PyInstaller --onedir mode for quick launch time
 
 Option A: Ready-to-Use Download
 
-macOS (Available Now): Download the PiP_Player_macOS.zip file from the Assets section below. Unzip it and place the PiP Player.app in your Applications folder.
+Platform
 
-Windows (Coming Soon): The Windows executable is currently being compiled and tested. Please use Option B for now, or check back soon for the release!
+Status
 
-Double-click the application to launch.
+Download
 
-Option B: From Source (Recommended for Linux/Advanced Users)
+macOS
+
+Release Available
+
+Download the PiP_Player_macOS.zip file from the Assets section below. Unzip it and place the PiP Player.app in your Applications folder.
+
+Windows
+
+Coming Soon
+
+The Windows executable is currently being compiled and tested. Please use Option B for now, or check back soon for the release!
+
+To launch, simply double-click the application.
+
+Option B: From Source (Linux/Advanced Users)
 
 Dependencies: Ensure Python 3 is installed, then install the required libraries:
 
 pip install PyQt6 PyQt6-WebEngine
 
 
-
 Run: Execute the source file:
 
 python pip_window.py
-
 
 
 🛠️ Known Limitation on macOS (Mission Control)
